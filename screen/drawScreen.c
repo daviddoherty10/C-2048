@@ -101,7 +101,7 @@ int drawScreen(int **state) {
 		printf("\n");
 	}
 	for (int i = 0; i < 4; i++) {
-		for (int i = 0; i < ((screenWidth / 2) - 4); i++) {
+		for (int i = 0; i < ((screenWidth / 2) - 8); i++) {
 			printf(" ");
 		}
 
