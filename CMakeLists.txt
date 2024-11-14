@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.31.0)
 
 # Project name
 project(SimpleGame)
@@ -14,17 +14,20 @@ add_executable(main
     takeInput/takeInput.c
     edgeDetection/nextMove.c
     utils/utils.c
+    gameloop/gameloop.c
 )
 
 # Add the test executable
 add_executable(tests 
+    main.c
     testing/mainTest.c
     screen/drawScreen.c
     screen/clearScreen.c
     takeInput/takeInput.c
     edgeDetection/nextMove.c
     utils/utils.c
+    gameloop/gameloop.c
 )
 
 # Include directories if needed
-include_directories(screen takeInput edgeDetection utils)
+include_directories(screen takeInput edgeDetection utils gameLoop testing)

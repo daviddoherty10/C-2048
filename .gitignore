@@ -8,10 +8,10 @@ main
 tests
 
 # Ignore CMake build directory
-CMakeFiles/
-CMakeCache.txt
-Makefile
-cmake_install.cmake
+#CMakeFiles/
+#CMakeCache.txt
+#Makefile
+#cmake_install.cmake
 
 # Ignore log and temporary files
 *.log

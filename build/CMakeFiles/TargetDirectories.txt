@@ -1,0 +1,4 @@
+/Users/daviddoherty/Documents/C 2048/build/CMakeFiles/main.dir
+/Users/daviddoherty/Documents/C 2048/build/CMakeFiles/tests.dir
+/Users/daviddoherty/Documents/C 2048/build/CMakeFiles/edit_cache.dir
+/Users/daviddoherty/Documents/C 2048/build/CMakeFiles/rebuild_cache.dir

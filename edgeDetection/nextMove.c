@@ -1,3 +1,6 @@
+#include <assert.h>
+#include <string.h>
+
 void nextMove(int **state, char nextMove) {
 	if (nextMove == 'a') {
 		for (int k = 0; k < 4; k++) {
@@ -76,6 +79,7 @@ void nextMove(int **state, char nextMove) {
 
 		// Then, merge tiles if they are the same
 		for (int i = 0; i < 4; i++) {
+			assert(state == NULL);
 			for (int k = 3; k > 0; k--) {
 				if (state[k][i] == state[k - 1][i] && state[k][i] != 0) {
 					// Merge tiles
@@ -96,5 +100,6 @@ void nextMove(int **state, char nextMove) {
 				}
 			}
 		}
+	} else if (nextMove == 'd') {
 	}
 }
