@@ -101,5 +101,23 @@ void nextMove(int **state, char nextMove) {
 			}
 		}
 	} else if (nextMove == 'd') {
+		// move everything to the right
+		for (int j = 0; j <= 3; j++) {
+			for (int i = 0; i < 3; i++) {
+				if (state[j][i] != 0 && state[j][i + 1] == 0) {
+					state[j][i + 1] = state[j][i];
+					state[j][i] = 0;
+				}
+			}
+		}
+
+		for (int j = 0; j <= 3; j++) {
+			for (int i = 0; i < 3; i++) {
+				if (state[j][i] != 0 && state[j][i + 1] == state[j][i]) {
+					state[j][i + 1] = state[j][i] * 2;
+					state[j][i] = 0;
+				}
+			}
+		}
 	}
 }
